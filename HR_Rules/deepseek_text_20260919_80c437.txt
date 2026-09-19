@@ -1,0 +1,60 @@
+16. PAYROLL AND DOCUMENTATION
+
+16.1 PAYROLL CUT-OFF DATE
+Payroll is calculated up to the 25th of each month.
+After the cut-off, changes apply to the next month.
+
+16.2 PAYSLIP ACCESS
+Payslips are available in HRMS.
+Accessible 3 days before payment.
+Historical payslips available for 5 years.
+
+16.3 SALARY DEDUCTIONS
+Income tax (per Iranian tax law).
+Social Security contribution (7 percent).
+Loan installments (if applicable).
+Unpaid leave deductions.
+Absence deductions.
+
+16.4 TAX CALCULATION
+Calculated according to the latest Iranian tax brackets.
+Updated annually.
+Detailed in each payslip.
+
+16.5 UPDATING BANK DETAILS
+Through HRMS.
+Requires HR approval.
+Effective from the next payroll cycle.
+
+16.6 UPDATING PERSONAL INFORMATION
+Through HRMS.
+Changes to marital status, address, dependents.
+Supporting documents may be required.
+
+16.7 EMPLOYMENT LETTER
+Request through HRMS.
+Purpose: visa, bank, embassy, etc.
+Delivered within 5 working days.
+May be in Persian or English.
+
+16.8 SALARY CERTIFICATE
+Request through HRMS.
+Purpose: loan, visa, rental.
+Delivered within 5 working days.
+Signed and stamped by HR.
+
+16.9 VISA DOCUMENTS
+HR provides: employment letter, salary certificate, tax records.
+Employee provides: personal documents.
+Processing time: up to 10 working days.
+
+16.10 WORK PERMIT RENEWAL
+HR handles renewals for foreign employees.
+Employee provides required documents 2 months before expiry.
+Company covers government fees.
+
+16.11 EMPLOYMENT CONTRACT
+Issued in two copies.
+Signed by employee and HR.
+Contains: position, salary, benefits, terms.
+Modifications require written addendum.

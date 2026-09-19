@@ -1,0 +1,64 @@
+2. LEAVE AND TIME OFF
+
+2.1 ANNUAL LEAVE
+Employees are entitled to 26 working days of annual leave per year.
+Leave is accrued monthly at a rate of 2.17 days from the start date.
+A maximum of 9 unused leave days may be carried over to the following year.
+Any unused leave beyond 9 days is forfeited. There is no cash payout except upon resignation.
+
+2.2 HOW TO REQUEST ANNUAL LEAVE
+1. Log into the HRMS system at hr.arianatech.ir.
+2. Select "Leave Request".
+3. Choose the start and end dates.
+4. Obtain approval from your direct supervisor (SLA: 48 hours).
+5. HR approval is required for leave longer than 5 days.
+
+2.3 LEAVE REQUEST DEADLINES
+Leave up to 3 days: at least 2 working days in advance.
+Leave from 4 to 10 days: at least 1 week in advance.
+Leave longer than 10 days: at least 1 month in advance.
+
+2.4 SICK LEAVE
+Maximum of 10 days per year with a doctor's confirmation.
+Up to 3 days: no medical certificate required (self-declared).
+More than 3 days: a certificate from an approved doctor is mandatory.
+More than 10 days: referred to Social Security insurance.
+
+2.5 MATERNITY LEAVE
+9 months (270 days) in accordance with Iranian Labor Law.
+Payment is made through Social Security insurance.
+May be extended using annual leave.
+
+2.6 PATERNITY LEAVE
+3 days with full pay.
+Must be used within 1 month of the child's birth.
+
+2.7 MARRIAGE LEAVE
+3 days with full pay.
+Available once during employment.
+
+2.8 BEREAVEMENT LEAVE
+First-degree relatives (parents, spouse, children, siblings): 3 days.
+Second-degree relatives: 1 day.
+
+2.9 UNPAID LEAVE
+Maximum of 1 month per year.
+Requires approval from the department manager and HR.
+No salary is paid and no insurance record is accrued.
+
+2.10 EMERGENCY LEAVE
+Up to 2 days per incident.
+Approved verbally by the supervisor and registered in the system afterwards.
+
+2.11 PUBLIC HOLIDAYS
+According to the official calendar of the Islamic Republic of Iran.
+Religious and national holidays are observed.
+The annual holiday calendar is announced at the beginning of each year.
+
+2.12 LEAVE DURING PROBATION
+During the first 3 months: 2 days of annual leave.
+Sick leave follows the normal procedure.
+
+2.13 LEAVE FOR PART-TIME EMPLOYEES
+Calculated in proportion to working hours.
+Example: A part-time employee (20 hours per week) is entitled to 13 days per year.

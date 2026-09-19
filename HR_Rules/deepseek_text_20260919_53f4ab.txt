@@ -1,0 +1,65 @@
+11. IT AND EQUIPMENT
+
+11.1 ISSUED EQUIPMENT
+Laptop (model based on role).
+Monitor (24 inch).
+Keyboard and mouse.
+Headset (for online meetings).
+Access card.
+Company mobile phone if required.
+
+11.2 EQUIPMENT REQUEST
+Through a ticket in the IT system (support.arianatech.ir).
+SLA: 3 working days.
+Additional equipment: requires supervisor approval.
+
+11.3 PERSONAL USE
+Limited personal use is allowed.
+Installing unauthorized software is prohibited.
+Personal commercial use is prohibited.
+
+11.4 REPORTING IT ISSUES
+Ticket at support.arianatech.ir.
+Phone: extension 1500.
+SLA: Critical 1 hour, High 4 hours, Normal 24 hours.
+
+11.5 DATA SECURITY
+Password: at least 12 characters, changed every 90 days.
+Two-Factor Authentication (2FA): mandatory.
+VPN: mandatory for access from outside.
+Sharing passwords is prohibited.
+Lock the screen when leaving the desk.
+
+11.6 EMAIL AND INTERNET
+Company email: for work only.
+Limited personal use is allowed.
+Large file downloads: restricted.
+Content filtering: per regulations.
+
+11.7 SOFTWARE
+Authorized software: listed in IT.
+Installing new software: requires IT approval.
+Licenses: provided by the company.
+Cracked software: strictly prohibited.
+
+11.8 COMPANY MOBILE PHONE
+For relevant roles (sales, support).
+Limited personal use.
+Returned upon departure.
+Call cap: 5 million rials per month.
+
+11.9 COMPANY CREDIT CARD
+For managers and sales roles.
+Limit: based on level.
+Monthly settlement with invoices.
+Personal use: prohibited.
+
+11.10 STATIONERY AND OFFICE SUPPLIES
+Request from the warehouse (extension 1600).
+Delivered the same day.
+Efficient use.
+
+11.11 BACKUP
+Work data: automatically backed up on the server.
+Local data: employee responsibility.
+Recommended: use company OneDrive.

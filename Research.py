@@ -49,6 +49,16 @@ Output rules:
 - Be specific in feedback: point to the exact part that needs change and suggest how.
 - Do not rewrite the text unless the change is minor; leave major rewrites to the generator.
 """
+EVAL_SYSTEM += """
+
+⚠️ CRITICAL FORMAT RULES:
+- You MUST respond with a single JSON object ONLY.
+- Do NOT include any markdown, code fences, or explanatory text.
+- Do NOT write things like "flag='Ok_research'".
+- The JSON object MUST use double quotes and follow this exact structure:
+  {"flag": "Ok_research" or "Change_research", "feedback": "...", "message": "..."}
+- If you cannot comply, respond with: {"flag": "Change_research", "feedback": "format error", "message": ""}
+"""
 
 EVAL_HUMAN = """USER QUESTION:
 {question}

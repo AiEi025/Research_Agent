@@ -7,7 +7,6 @@ from langchain_tavily import TavilySearch
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, StateGraph
 from langgraph.graph.message import add_messages
-from langgraph.types import Command, interrupt
 from pydantic import BaseModel, Field
 
 from model import model
@@ -93,8 +92,8 @@ def Human_Resource_RAG_node(state: graph_schema) -> graph_schema:
 
 
 tavily = TavilySearch(max_results=3, topic="general")
-llm_gen = model(temperature=0.5)
-llm_eval = model(temperature=0.3)
+llm_gen = model(tune=0.5)
+llm_eval = model(tune=0.3)
 
 class GenSchema(BaseModel):
     message: str = Field(description="The improved research text after applying feedback.")
@@ -146,7 +145,7 @@ def Research_Generate_node(state: graph_schema) -> graph_schema:
         search_text = state.get("search_results", "")
 
     # 2. Generate or revise
-    chain = prompt_generate | llm_gen.with_structured_output(GenSchema)
+    chain = prompt_generate | llm_gen.with_structured_output(GenSchema , strict= True)
     result: GenSchema = chain.invoke({
         "question": question,
         "search_results": search_text,
@@ -167,7 +166,7 @@ def Research_Eval_node(state: graph_schema) -> graph_schema:
     candidate = messages[-1].content
     search_text = state.get("search_results", "")
 
-    chain = prompt_eval | llm_eval.with_structured_output(EvalSchema)
+    chain = prompt_eval | llm_eval.with_structured_output(EvalSchema ,strict= True)
     result: EvalSchema = chain.invoke({
         "question": question,
         "search_results": search_text,
@@ -293,6 +292,10 @@ graph.get_graph().draw_mermaid_png(output_file_path='./graph.png')
         
 
 
-    
-    
+config = {"configurable": {"thread_id": 'soft_team'}}
+for chunk in graph.stream({'messages':"search about cat i love this animal"}, config = config):
+    print(chunk)
+
+
+
 

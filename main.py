@@ -64,13 +64,12 @@ class graph_schema(TypedDict):
     route: Literal["RAG", "generate", "unknown"] | None
     
 def Human_Resource_RAG_node(state: graph_schema) -> graph_schema:
-    messages = state["messages"]
-    last_user_msg = messages[-1].content if messages else ""
+    question = state["question"] or ""
     llm_openai = model(tune=0.3)
     # Step 1: query generation
     planner_chain = prompt_planner | llm_openai.with_structured_output(QueryPlan)
-    plan = planner_chain.invoke({"messages": messages})
-    queries = plan.queries[:3] if plan.queries else [last_user_msg]
+    plan = planner_chain.invoke({"messages": question})
+    queries = plan.queries[:3] if plan.queries else [question]
 
     # Step 2: retrieve per query (list of lists)
     docs_per_query = [retriever.invoke(q) for q in queries]
@@ -85,7 +84,7 @@ def Human_Resource_RAG_node(state: graph_schema) -> graph_schema:
     answer_chain = prompt_answer | llm_openai
     answer = answer_chain.invoke({
         "context": context,
-        "question": last_user_msg,
+        "question": question,
     })
 
     return {"messages": [answer]}
@@ -131,8 +130,8 @@ prompt_eval = ChatPromptTemplate.from_messages([
 ])
     
 def Research_Generate_node(state: graph_schema) -> graph_schema:
-    messages = state["messages"]
-    question = messages[-1].content if messages else ""
+    # messages = state["messages"]
+    question = state["question"] or ""
     feedback = state.get("feedback")
     attempts = state.get("attempts", 0)
 
@@ -162,7 +161,8 @@ def Research_Generate_node(state: graph_schema) -> graph_schema:
 
 def Research_Eval_node(state: graph_schema) -> graph_schema:
     messages = state["messages"]
-    question = state.get("question", messages[0].content if messages else "")
+
+    question = state["question"] or ""
     candidate = messages[-1].content
     search_text = state.get("search_results", "")
 
@@ -249,7 +249,14 @@ def router_node(state:graph_schema) -> graph_schema:
     result: RouterSchema = router_chain.invoke({"question": question})
     print(f"[router] route={result.route} reason={result.reason}")
     
-    return {'route':result.route}
+    return {
+    "route": result.route,
+    "question": question,
+    "attempts": 0,
+    "feedback": None,
+    "flag": None,
+    "search_results": None,
+}
     
 
 MAX_ATTEMPTS = 3
